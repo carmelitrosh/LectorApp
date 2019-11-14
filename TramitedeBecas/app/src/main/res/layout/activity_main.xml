@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#9FBFEE"
+    tools:context=".MainActivity"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BECA *"
+        android:textSize="30dp"
+        android:gravity="left"
+        android:background="#0d47a1"
+        android:textColor="#ffffff"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textAlignment="center"
+        android:textSize="1pt"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ingresa tu edad:"
+        android:textSize="8pt"
+        android:background="#0d47a1"
+        android:textColor="#ffffff"
+        android:gravity="center"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="8pt"
+        android:hint=""
+        android:inputType="number"
+        android:id="@+id/Edad"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#0d47a1"
+        android:textColor="#ffffff"
+        android:text="Selecciona una Beca"
+        android:textSize="8pt"
+        android:gravity="center"/>
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/OpcionesBeca">
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Beca buena"
+            android:textSize="15dp"
+            android:id="@+id/BecaBuena"
+            />
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Beca muy buena"
+            android:textSize="15dp"
+            android:id="@+id/BecaMuyBuena"
+            />
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Beca excelente"
+            android:textSize="15dp"
+            android:id="@+id/Becaexcelente"
+            />
+    </RadioGroup>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Promedio"
+        android:background="#0d47a1"
+        android:textColor="#ffffff"
+        android:textSize="8pt"
+        android:gravity="center"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="8pt"
+        android:hint=""
+        android:inputType="number"
+        android:id="@+id/Promedio"
+        />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ingreso Familiar"
+        android:background="#0d47a1"
+        android:textColor="#ffffff"
+        android:textSize="8pt"
+        android:gravity="center"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="8pt"
+        android:hint=""
+        android:inputType="numberDecimal"
+        android:id="@+id/IngresoFamiliar"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Numero de hermanos:"
+        android:background="#0d47a1"
+        android:textColor="#ffffff"
+        android:textSize="8pt"
+        android:gravity="center"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="8pt"
+        android:hint=""
+        android:inputType="numberDecimal"
+        android:id="@+id/NumeroHermanos"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Selecciona tu folio:"
+        android:background="#0d47a1"
+        android:textColor="#ffffff"
+        android:textSize="8pt"
+        android:gravity="center"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rgpOpciones">
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Folio1"
+            android:id="@+id/rdb100km"
+            android:textSize="8pt"/>
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Folio2"
+            android:id="@+id/rdb1km"
+            android:textSize="8pt"/>
+    </RadioGroup>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textAlignment="center"
+        android:textSize="9pt"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enviar Tramite"
+        android:background="#fe5f55"
+        android:textSize="15dp"
+        android:onClick="btnTramite"
+        android:id="@+id/btnTramite"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:id="@+id/textview_result"
+        />
+
+</LinearLayout>

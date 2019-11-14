@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ea899a"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".BecaBuena">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Beca Buena"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textSize="23pt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edadAlu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Edad"
+        android:inputType="numberDecimal"
+
+        />
+
+    <EditText
+        android:id="@+id/PromAlu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Promedio(80-85)"
+        android:inputType="number"
+
+        />
+
+    <EditText
+        android:id="@+id/IngreAlu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingreso Familiar"
+        android:inputType="number"
+
+        />
+
+    <EditText
+        android:id="@+id/numHerm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Numero de hermanos"
+        android:inputType="number"
+
+        />
+
+    <EditText
+        android:id="@+id/IdAlu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Clave del Alumno"
+        android:inputType="number"
+
+        />
+
+    <Button
+        android:layout_width="70pt"
+        android:layout_height="wrap_content"
+        android:background="#f5d033"
+        android:onClick="aceptarValidar"
+        android:text="Aceptar"
+        android:textColor="#000000" />
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="5pt" />
+
+    <Button
+        android:id="@+id/btnRegresar"
+        android:layout_width="70pt"
+        android:layout_height="wrap_content"
+        android:background="#c23b22"
+        android:text="Regresar"
+        android:textColor="#000000" />
+
+
+    <TextView
+        android:id="@+id/textview_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

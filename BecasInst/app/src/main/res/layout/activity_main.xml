@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ea899a"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Becas"
+        android:textSize="50dp"
+        android:textColor="#ffffff"
+        android:textAlignment="center" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="35pt"/>
+    <Button
+        android:id="@+id/btnBecaBuena"
+        android:layout_width="70pt"
+        android:layout_height="wrap_content"
+        android:text="Beca Buena"
+        android:background="#9fd5d1"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnBecaBuena"
+        />
+
+    <TextView
+        android:id="@+id/Kotlin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="50dp"
+        android:fontFamily="serif-monospace"
+        android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/btnBecaMuyBuena"
+        android:layout_width="70pt"
+        android:layout_height="wrap_content"
+        android:text="Beca Muy Buena"
+        android:background="#9fd5d1"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnBecaMuyBuena"
+        />
+    <TextView
+        android:id="@+id/Kotlin1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="50dp"
+        android:fontFamily="serif-monospace"
+        android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/btnBecaExelente"
+        android:layout_width="70pt"
+        android:layout_height="wrap_content"
+        android:text="Beca Exelente"
+        android:background="#9fd5d1"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnBecaExelente"/>
+
+
+    <TextView
+        android:id="@+id/Kotlin3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="50dp"
+        android:fontFamily="serif-monospace"
+        android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/btnSalir"
+        android:layout_width="70pt"
+        android:layout_height="wrap_content"
+        android:text="Salir"
+        android:background="#c23b22"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSalir"/>
+
+</LinearLayout>
